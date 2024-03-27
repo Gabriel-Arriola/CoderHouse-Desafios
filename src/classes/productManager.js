@@ -1,4 +1,4 @@
-const fs = require('fs');
+import fs from 'fs';
 
 class ProductManager {
     static idProduct = 1;
@@ -6,23 +6,23 @@ class ProductManager {
     #path;
 
     constructor() {
-        this.#createDataFolder();
-        this.#path = './DataFiles/products.json';
+        //this.#createDataFolder();
+        this.#path = './Data/products.json';
         this.#products = this.#readDataFromFile();
     }
 
-    #createDataFolder() {
-        try {
-            if (!fs.existsSync("./DataFiles")){
-                fs.mkdirSync("./DataFiles");
-                console.log("Folder created...");
-            }
+    // #createDataFolder() {
+    //     try {
+    //         if (!fs.existsSync("./src/Data")){
+    //             fs.mkdirSync("./src/Data");
+    //             console.log("Folder created...");
+    //         }
                 
-        } catch (error) {
-            console.log(`Error when attempt to create folder: ${error}`);
-        }
+    //     } catch (error) {
+    //         console.log(`Error when attempt to create folder: ${error}`);
+    //     }
+    // }
 
-    }
     #readDataFromFile() {
         try {
             if (fs.existsSync(this.#path))
@@ -106,5 +106,5 @@ class ProductManager {
     }
 }
 
-module.exports = ProductManager;
+export default ProductManager;
 
