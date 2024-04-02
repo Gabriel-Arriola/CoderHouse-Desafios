@@ -1,38 +1,198 @@
 [
     {
         "id": 1,
-        "title": "Pick-Up",
-        "description": "Ford",
-        "price": 50000,
-        "thumbnail": "img_ranger",
-        "code": "FRD_RGR_XL",
-        "stock": 50
+        "title": "Toyota Camry",
+        "description": "Mid-size car produced by Toyota",
+        "code": "TC2023",
+        "price": 25000,
+        "status": true,
+        "stock": 45,
+        "category": "Toyota",
+        "thumbnails": [
+            "img1",
+            "img2"
+        ]
     },
     {
         "id": 2,
-        "title": "Pick-Up",
-        "description": "VW",
-        "price": 60000,
-        "thumbnail": "img_amarok",
-        "code": "VW_AMK_TDI",
-        "stock": 60
+        "title": "Honda Civic",
+        "description": "Compact car produced by Honda",
+        "code": "HC2023",
+        "price": 22000,
+        "status": true,
+        "stock": 78,
+        "category": "Honda",
+        "thumbnails": [
+            "img1",
+            "img2"
+        ]
     },
     {
         "id": 3,
-        "title": "Pick-Up",
-        "description": "RENAULT",
-        "price": 75000,
-        "thumbnail": "img_alaskan2",
-        "code": "RNT_AKN_S",
-        "stock": 80
+        "title": "Ford F-150",
+        "description": "Full-size pickup truck produced by Ford",
+        "code": "FF1502023",
+        "price": 35000,
+        "status": true,
+        "stock": 32,
+        "category": "Ford",
+        "thumbnails": [
+            "img1",
+            "img2"
+        ]
     },
     {
         "id": 4,
-        "title": "Pick-Up",
-        "description": "RAM",
-        "price": 900000,
-        "thumbnail": "img_ram2500",
-        "code": "RAM_2k5",
-        "stock": 20
+        "title": "Chevrolet Silverado",
+        "description": "Full-size pickup truck produced by Chevrolet",
+        "code": "CS2023",
+        "price": 36000,
+        "status": true,
+        "stock": 56,
+        "category": "Chevrolet",
+        "thumbnails": [
+            "img1",
+            "img2"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Volkswagen Golf",
+        "description": "Compact car produced by Volkswagen",
+        "code": "VG2023",
+        "price": 20000,
+        "status": true,
+        "stock": 89,
+        "category": "Volkswagen",
+        "thumbnails": [
+            "img1",
+            "img2"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Nissan Rogue",
+        "description": "Compact SUV produced by Nissan",
+        "code": "NR2023",
+        "price": 28000,
+        "status": true,
+        "stock": 41,
+        "category": "Nissan",
+        "thumbnails": [
+            "img1",
+            "img2"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "BMW 3 Series",
+        "description": "Compact executive car produced by BMW",
+        "code": "B3S2023",
+        "price": 40000,
+        "status": true,
+        "stock": 67,
+        "category": "BMW",
+        "thumbnails": [
+            "img1",
+            "img2"
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Mercedes-Benz C-Class",
+        "description": "Compact executive car produced by Mercedes-Benz",
+        "code": "MBCC2023",
+        "price": 42000,
+        "status": true,
+        "stock": 23,
+        "category": "Mercedes-Benz",
+        "thumbnails": [
+            "img1",
+            "img2"
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Audi A4",
+        "description": "Compact executive car produced by Audi",
+        "code": "AA42023",
+        "price": 38000,
+        "status": true,
+        "stock": 54,
+        "category": "Audi",
+        "thumbnails": [
+            "img1",
+            "img2"
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Hyundai Sonata",
+        "description": "Mid-size car produced by Hyundai",
+        "code": "HS2023",
+        "price": 23000,
+        "status": true,
+        "stock": 76,
+        "category": "Hyundai",
+        "thumbnails": [
+            "img1",
+            "img2"
+        ]
+    },
+    {
+        "id": 11,
+        "title": "Ford Explorer",
+        "description": "A spacious and family-friendly SUV produced by Ford.",
+        "code": "FEXP2023",
+        "price": 42000,
+        "status": true,
+        "stock": 42,
+        "category": "Ford",
+        "thumbnails": [
+            "img1",
+            "img2"
+        ]
+    },
+    {
+        "id": 12,
+        "title": "Ford Mustang",
+        "description": "An iconic and sporty muscle car produced by Ford.",
+        "code": "FMUS2023",
+        "price": 32000,
+        "status": true,
+        "stock": 61,
+        "category": "Ford",
+        "thumbnails": [
+            "img1",
+            "img2"
+        ]
+    },
+    {
+        "id": 13,
+        "title": "Chevrolet Equinox",
+        "description": "Compact SUV produced by Chevrolet",
+        "code": "CEQ2023",
+        "price": 25000,
+        "status": true,
+        "stock": 72,
+        "category": "Chevrolet",
+        "thumbnails": [
+            "img1",
+            "img2"
+        ]
+    },
+    {
+        "id": 14,
+        "title": "Chevrolet Malibu",
+        "description": "Mid-size car produced by Chevrolet",
+        "code": "CMLB2023",
+        "price": 22000,
+        "status": true,
+        "stock": 91,
+        "category": "Chevrolet",
+        "thumbnails": [
+            "img1",
+            "img2"
+        ]
     }
 ]
