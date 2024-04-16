@@ -1,13 +1,17 @@
 import fs from 'fs';
 
 class ProductManager {
-    static idProduct = 1;
     #products;
     #path;
+    static #instance;
 
     constructor() {
+        if (ProductManager.#instance)
+            return ProductManager.#instance;
         this.#path = './Data/products.json';
         this.#products = [];
+
+        ProductManager.#instance = this;
     }
 
     async init() {
@@ -39,7 +43,7 @@ class ProductManager {
         return id
     }
 
-    addProduct = async (title, description, code, price, status = true, stock, category, thumbnails = []) => {
+    addProduct = async ({ title, description, code, price, status = true, stock, category, thumbnails = [] }) => {
         if (!title || !description || !price || !code || !stock || !category)
             return 'All fields are required'
         this.#products = await this.#readDataFromFile();
@@ -64,12 +68,12 @@ class ProductManager {
         let status = false;
         let message = `Product Not Found By ID ${idProduct}`;
         const products = await this.#readDataFromFile();
-        let product = products.find(prod=>prod.id === idProduct);
-        if (product){
+        let product = products.find(prod => prod.id === idProduct);
+        if (product) {
             status = true;
             message = product;
         }
-        return {status, message}
+        return { status, message }
     }
 
     updateProduct = async (idProduct, forUpdateProduct) => {

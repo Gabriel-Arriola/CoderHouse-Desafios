@@ -9,8 +9,8 @@
         "stock": 45,
         "category": "Toyota",
         "thumbnails": [
-            "img1",
-            "img2"
+            "https://picsum.photos/200",
+            "https://picsum.photos/200"
         ]
     },
     {
@@ -19,12 +19,12 @@
         "description": "Compact car produced by Honda",
         "code": "HC2023",
         "price": 22000,
-        "status": true,
+        "status": false,
         "stock": 78,
         "category": "Honda",
         "thumbnails": [
-            "img1",
-            "img2"
+            "https://picsum.photos/200",
+            "https://picsum.photos/200"
         ]
     },
     {
@@ -37,8 +37,8 @@
         "stock": 32,
         "category": "Ford",
         "thumbnails": [
-            "img1",
-            "img2"
+            "https://picsum.photos/200",
+            "https://picsum.photos/200"
         ]
     },
     {
@@ -51,8 +51,8 @@
         "stock": 56,
         "category": "Chevrolet",
         "thumbnails": [
-            "img1",
-            "img2"
+            "https://picsum.photos/200",
+            "https://picsum.photos/200"
         ]
     },
     {
@@ -65,8 +65,8 @@
         "stock": 89,
         "category": "Volkswagen",
         "thumbnails": [
-            "img1",
-            "img2"
+            "https://picsum.photos/200",
+            "https://picsum.photos/200"
         ]
     },
     {
@@ -75,13 +75,10 @@
         "description": "Compact SUV produced by Nissan",
         "code": "NR2023",
         "price": 28000,
-        "status": true,
+        "status": false,
         "stock": 41,
         "category": "Nissan",
-        "thumbnails": [
-            "img1",
-            "img2"
-        ]
+        "thumbnails": []
     },
     {
         "id": 7,
@@ -93,8 +90,8 @@
         "stock": 67,
         "category": "BMW",
         "thumbnails": [
-            "img1",
-            "img2"
+            "https://picsum.photos/200",
+            "https://picsum.photos/200"
         ]
     },
     {
@@ -107,8 +104,8 @@
         "stock": 23,
         "category": "Mercedes-Benz",
         "thumbnails": [
-            "img1",
-            "img2"
+            "https://picsum.photos/200",
+            "https://picsum.photos/200"
         ]
     },
     {
@@ -121,8 +118,8 @@
         "stock": 54,
         "category": "Audi",
         "thumbnails": [
-            "img1",
-            "img2"
+            "https://picsum.photos/200",
+            "https://picsum.photos/200"
         ]
     },
     {
@@ -131,12 +128,12 @@
         "description": "Mid-size car produced by Hyundai",
         "code": "HS2023",
         "price": 23000,
-        "status": true,
+        "status": false,
         "stock": 76,
         "category": "Hyundai",
         "thumbnails": [
-            "img1",
-            "img2"
+            "https://picsum.photos/200",
+            "https://picsum.photos/200"
         ]
     },
     {
@@ -149,8 +146,8 @@
         "stock": 42,
         "category": "Ford",
         "thumbnails": [
-            "img1",
-            "img2"
+            "https://picsum.photos/200",
+            "https://picsum.photos/200"
         ]
     },
     {
@@ -163,8 +160,8 @@
         "stock": 61,
         "category": "Ford",
         "thumbnails": [
-            "img1",
-            "img2"
+            "https://picsum.photos/200",
+            "https://picsum.photos/200"
         ]
     },
     {
@@ -177,8 +174,8 @@
         "stock": 72,
         "category": "Chevrolet",
         "thumbnails": [
-            "img1",
-            "img2"
+            "https://picsum.photos/200",
+            "https://picsum.photos/200"
         ]
     },
     {
@@ -191,8 +188,8 @@
         "stock": 91,
         "category": "Chevrolet",
         "thumbnails": [
-            "img1",
-            "img2"
+            "https://picsum.photos/200",
+            "https://picsum.photos/200"
         ]
     }
 ]
