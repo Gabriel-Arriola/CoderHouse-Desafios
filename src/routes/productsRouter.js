@@ -1,5 +1,6 @@
 import { Router } from "express";
-import ProductManager from "../dao/productManager.js";
+//import ProductManager from "../dao/productManager.js";
+import ProductManager from "../dao/productManagerMongo.js";
 const productManager = new ProductManager();
 const router = Router();
 
@@ -15,9 +16,9 @@ router.get("/", async (req, res) => {
 });
 
 router.get("/:pid", async (req, res) => {
-    const productId = Number(req.params.pid);
+    const productId = req.params.pid;
     const product = await productManager.getProductsById(productId);
-    return res.json(product.message);
+    return res.json(product);
 });
 
 router.post("/", async (req, res) => {
@@ -29,13 +30,13 @@ router.post("/", async (req, res) => {
 });
 
 router.put("/:pid", async (req, res) => {
-    const productId = Number(req.params.pid);
+    const productId = req.params.pid;
     const products = await productManager.updateProduct(productId, req.body);
     return res.json(products);
 });
 
 router.delete("/:pid", async (req, res) => {
-    const productId = Number(req.params.pid);
+    const productId = req.params.pid;
     const products = await productManager.deleteProduct(productId);
     return res.json(products);
 

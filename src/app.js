@@ -6,7 +6,9 @@ import productsRouter  from './routes/productsRouter.js';
 import cartRouter  from './routes/cartRouter.js';
 import views from './routes/views.js'
 import __dirname from './utils.js'
-import ProductManager from './dao/productManager.js';
+//import ProductManager from './dao/productManager.js';
+import ProductManager from './dao/productManagerMongo.js';
+import { dbConnection } from './database/config.js';
 
 const app = express();
 const PORT = 8080;
@@ -25,6 +27,9 @@ app.use("/",views);
 app.use("/api/products", productsRouter);
 app.use("/api/carts", cartRouter);
 
+await dbConnection();
+
+
 const expressServer = app.listen(PORT, () => console.log(`Server running at port ${PORT}`));
 const socketServer = new Server(expressServer);
 
@@ -34,9 +39,11 @@ socketServer.on('connection',async socket=>{
     socket.emit('productos', products);
 
     socket.on('addProduct', async product=>{
-        const result = await prod.addProduct({...product})
-        console.log({result});
-        if(result.product)
-            socket.emit('productos', result.product);
+        const newProduct = await prod.addProduct({...product})
+        console.log({newProduct});
+        if(newProduct){
+            products.push(newProduct)
+            socketServer.emit('productos', products);
+        }
     })
 })
