@@ -1,46 +1,45 @@
-class ProductManager{
-    static idProduct = 1;
-    #products;
-
-    constructor(){
-        this.#products = [];
+class ProductManager {
+    constructor() {
+        this.products = [];
+        this.nextId = 1;
     }
 
-    addProduct(title, description, price, thumbnail, code, stock){
-        if (!title || !description || !price || !thumbnail || !code || !stock)
-            return 'All fields are required'
+    addProduct({ title, description, price, thumbnail, code, stock }) {
+        if (!title || !description || !price || !thumbnail || !code || !stock) {
+            console.error("All fields are required");
+            return;
+        }
 
-        const repeatedCode = this.#products.some(prod => prod.code == code);
-        if(repeatedCode)
-            return `The code ${code} is already in use`;
+        if (this.products.some(product => product.code === code)) {
+            console.error(`Product with code ${code} already exists`);
+            return;
+        }
 
         const newProduct = {
-            id : ProductManager.idProduct ++,
-            title, 
-            description, 
-            price, 
-            thumbnail, 
-            code, 
+            id: this.nextId++,
+            title,
+            description,
+            price,
+            thumbnail,
+            code,
             stock
         };
-        this.#products.push(newProduct);
-        return 'Product added successfully';
+
+        this.products.push(newProduct);
     }
 
-    getProducts(){
-        return this.#products;
+    getProducts() {
+        return this.products;
     }
 
-    getProductsById(idProduct){
-        const product = this.#products.find(prod => prod.id == idProduct);
-        if (product)
-            return product;
-        else
-            return `Product Not Found By ID ${idProduct}`;
+    getProductById(id) {
+        const product = this.products.find(product => product.id === id);
+        if (!product) {
+            console.error("Not found");
+            return;
+        }
+        return product;
     }
-
 }
 
 module.exports = ProductManager;
-
-
