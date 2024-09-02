@@ -13,3 +13,19 @@ console.log(producto.getProducts());
 
 console.log('=======================================================');
 console.log(producto.getProductById(2));
+
+console.log('=======================================================');
+const forUpdateProduct = {
+    "id": 20,
+    "title": "PickUp",
+    "description": "renault",
+    "price": 5000,
+    "thumbnail": "img_alaskan2.0"
+ }
+
+console.log(producto.updateProduct(3, forUpdateProduct));
+console.log(producto.getProductById(3));
+
+console.log('=======================================================');
+console.log(producto.deleteProduct(2));
+console.log(producto.getProducts());
