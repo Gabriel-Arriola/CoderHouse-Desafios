@@ -1,0 +1,33 @@
+tags:
+  - name: Users
+    description: Gestión de usuarios
+paths:
+  /api/sessions/current:
+    get:
+      summary: Lista de usuarios
+      tags: [Usuarios]
+      responses:
+        200:
+          description: Lista de usuarios
+        400:
+          description: Error
+
+  /api/sessions/login:
+    post:
+      summary: Login
+      tags: [Usuarios]
+      responses:
+        200:
+          description: Login exitoso
+        400:
+          description: Error de login
+
+  /api/sessions/registro:
+    post:
+      summary: Registro
+      tags: [Usuarios]
+      responses:
+        200:
+          description: Registro exitoso
+        400:
+          description: Error de login
